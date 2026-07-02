@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/idthirdeyetimesheet}
+  jackson:
+    time-zone: Asia/Kolkata
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:9a4f2c8d3e7b1a5f6g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d}
+    # Token validity: 1 day in milliseconds
+    expiration-ms: 86400000
